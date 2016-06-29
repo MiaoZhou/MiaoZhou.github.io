@@ -18,3 +18,4 @@ github_username:  MiaoZhou
 # Build settings
 markdown: kramdown
 timezone: Asia/Shanghai
+exclude: [CNAME, deploy.sh]
