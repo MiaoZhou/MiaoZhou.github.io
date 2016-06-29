@@ -19,3 +19,5 @@ github_username:  MiaoZhou
 markdown: kramdown
 timezone: Asia/Shanghai
 exclude: [CNAME, deploy.sh]
+gems:
+    - jekyll-minifier
