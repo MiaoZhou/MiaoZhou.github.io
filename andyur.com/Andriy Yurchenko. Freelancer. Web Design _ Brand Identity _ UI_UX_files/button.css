@@ -1,0 +1,223 @@
+.button {
+	background: none;
+	border: none;
+	width: 100px;
+	height: 35px;
+	outline: none;
+	position: relative;
+    text-align: center;
+    float: right;
+	margin: -5px 3px 0 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    font-family:  ProximaNovaLight
+}
+
+
+.button--round {
+    margin-left: 11px;
+    display: block;
+	width: 65px;
+	height: 65px;
+}
+.button--round:nth-child(3){
+    margin-right: 5px;
+}
+
+.button--round .morph-shape svg {
+    padding-left: 2px;
+}
+
+.button__text {
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+	top: 0;
+	left: 0;
+    font-size: 20px;
+	color: #a3a3a3;
+	stroke: #a3a3a3;
+	fill: #a3a3a3;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.morph-shape {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.button--line .morph-shape svg {
+	fill: none;
+	stroke: #fff;
+	stroke-linecap: round;
+}
+
+.button--fill .morph-shape svg {
+    fill: none;
+    stroke: #a3a3a3;
+	stroke-width: 5px;
+}
+
+.button--round .morph-shape svg {
+	stroke-width: 3px;
+}
+
+/* Example for effect */
+
+.button--anim-1 .button__text {
+	-webkit-transition: -webkit-transform 0.15s;
+	transition: transform 0.15s;
+}
+
+.button--anim-1:active .button__text {
+	-webkit-transform: translate3d(0, -5px, 0);
+	transform: translate3d(0, -5px, 0);
+}
+
+
+@media (max-width: 469px){
+    .main-mobile,
+    .freebies-mobile{
+        height: 35px;
+        width: 90px;
+    }
+    .main-mobile{
+        margin-top: 22.5px;
+    }
+    .freebies-mobile{
+        margin-top: -8px;
+    }
+}
+
+@media (min-width: 470px){
+
+    .button {
+	background: none;
+	border: none;
+	width: 100px;
+	height: 35px;
+	outline: none;
+	position: relative;
+    float: right;
+	margin: -8px 3px 0 10px;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+    }
+
+    .mt{
+        margin-top: 25px;
+    }
+
+    .button--round {
+        margin-left: 11px;
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+    .button--round:nth-child(3){
+        margin-right: 5px;
+    }
+
+    .button--round .morph-shape svg {
+    }
+
+    .button__text {
+        display: block;
+        text-align: center;
+        position: relative;
+        z-index: 100;
+        font-size: 20px;
+        color: #a3a3a3;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .morph-shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .button--line .morph-shape svg {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 4px;
+        stroke-linecap: round;
+    }
+
+    .button--fill .morph-shape svg {
+        fill: none;
+        stroke: #a3a3a3;
+        stroke-width: 3px;
+    }
+
+    .button--round .morph-shape svg {
+        stroke-width: 2px;
+    }
+
+    /* Example for effect */
+
+    .button--anim-1 .button__text {
+        -webkit-transition: -webkit-transform 0.15s;
+        transition: transform 0.15s;
+    }
+
+    .button--anim-1:active .button__text {
+        -webkit-transform: translate3d(0, -5px, 0);
+        transform: translate3d(0, -5px, 0);
+}
+    
+        .main-mobile,
+    .freebies-mobile{
+        height: 40px;
+        width: 110px;
+    }
+    .main-mobile{
+        margin-top: 21px;
+    }
+    .freebies-mobile{
+        margin-top: -10px;
+    }
+    
+}
+
+
+@media (min-width: 680px){
+
+    .links-h .mpc,
+    .links-h .fpc{
+        height: 40px;
+        width: 105px;
+        margin-top: -11px;
+    }
+
+}
